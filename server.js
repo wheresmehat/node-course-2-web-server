@@ -59,7 +59,14 @@ app.get("/about", (req, res) => {
     });
 });
 
+app.get("/projects", (req, res) => {
 
+    res.render("projects.hbs", { 
+
+        pageTitle: "Projects page",
+        welcomeProjects: "Welcome to my projects page"
+    });
+});
 
 
 app.listen(port, () => {
